@@ -1,0 +1,245 @@
+.appointment-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
+    min-width: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.appointment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #333333;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.status {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.status.Pending {
+    background: linear-gradient(to right, #ffcc80, #ffa726);
+    color: #f57c00;
+    box-shadow: 0 2px 4px rgba(255, 204, 128, 0.5);
+}
+
+.status.Pending:hover {
+    background: linear-gradient(to right, #ffa726, #ffcc80);
+    box-shadow: 0 4px 8px rgba(255, 204, 128, 0.5);
+}
+
+.status.Completed {
+    background: linear-gradient(to right, #a5d6a7, #66bb6a);
+    color: #2e7d32;
+    box-shadow: 0 2px 4px rgba(165, 214, 167, 0.5);
+}
+
+.status.Completed:hover {
+    background: linear-gradient(to right, #66bb6a, #a5d6a7);
+    box-shadow: 0 4px 8px rgba(165, 214, 167, 0.5);
+}
+
+.status.Cancelled {
+    background: linear-gradient(to right, #ef9a9a, #e57373);
+    color: #c62828;
+    box-shadow: 0 2px 4px rgba(239, 154, 154, 0.5);
+}
+
+.status.Cancelled:hover {
+    background: linear-gradient(to right, #e57373, #ef9a9a);
+    box-shadow: 0 4px 8px rgba(239, 154, 154, 0.5);
+}
+.username {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-icon img {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.user-name {
+    color: #666666;
+}
+
+.Time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Start-time,
+.end-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Start-time img,
+.end-time img {
+    width: 25px;
+    height: 25px;
+}
+
+.stylist_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stylist,
+.New-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stylist img,
+.New-user img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Money {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Money img {
+    width: 25px;
+    height: 25px;
+}
+
+.add-on-services,
+.actions button,
+.end-service_btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.add-on-services {
+    background: linear-gradient(to right, #42a5f5, #5732cc);
+    color: #ffffff;
+}
+
+.add-on-services:hover {
+    background: linear-gradient(to right, #5732cc, #42a5f5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-on-services:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(66, 165, 245, 0.5);
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    gap: 10px;
+}
+
+.actions button {
+    width: 48%;
+}
+
+.actions .review {
+    background: linear-gradient(to right, #9b6dfc, #3b2371);
+    color: #ffffff;
+}
+
+.actions .review:hover {
+    background: linear-gradient(to right, #3b2371, #9b6dfc);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.actions .review:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(102, 187, 106, 0.5);
+}
+
+.actions .cancel-service {
+    background: linear-gradient(to right, #ef5350, #e53935);
+    color: #ffffff;
+}
+
+.actions .cancel-service:hover {
+    background: linear-gradient(to right, #e53935, #ef5350);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.actions .cancel-service:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(239, 83, 80, 0.5);
+}
+
+.end-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.end-service_btn {
+    background: linear-gradient(to right, #9b6dfc, #3b2371);
+    color: #ffffff;
+    width: 100%;
+}
+
+.end-service_btn:hover {
+    background: linear-gradient(to right, #3b2371, #9b6dfc);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.end-service_btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(102, 187, 106, 0.5);
+}
+
+@media (max-width: 768px) {
+    .appointment-card {
+        width: 100%;
+        max-width: none;
+    }
+}
+
